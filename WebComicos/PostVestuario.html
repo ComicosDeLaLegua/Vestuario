@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agregar Vestuario</title>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <link rel="stylesheet" href="./css/HR.css">
+    <script src="./js/PostVestuario.js"></script>
+    <script src="./js/Dropdown.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Castoro&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+    <nav>
+        <div class="nav-wrapper #000000 black">
+
+            <ul id="nav-mobile " class="right hide-on-med-and-down ">
+                <li><a class='dropdown-trigger' data-target='Vestuarios'> Vestuarios </a></li>
+                <li><a class='dropdown-trigger' data-target='Almacen'>Almacenes </a></li>
+                <li><a class='dropdown-trigger' data-target='Artistas'>Artistas </a></li>
+                <li><a class='dropdown-trigger' data-target='Prestamos'>Prestamos</a></li>
+
+
+                <li><a onclick="CloseSesion()">Cerrar Sesión</a></li>
+            </ul>
+        </div>
+    </nav>
+
+
+
+
+    <!-- Vestuarios-->
+    <ul id='Vestuarios' class='dropdown-content'>
+        <li><a href="main.html">Ver todos</a></li>
+        <li><a href="PostVestuario.html">Agregar</a></li>
+        <li><a href="GetNameVestuario.html">Buscar</a></li>
+        <li><a href="PutVestuario.html">Editar</a></li>
+
+    </ul>
+    <!-- Almacen-->
+  <ul id='Almacen' class='dropdown-content'>
+    <li><a href="GetAllAlmacen.html">Ver todos</a></li>
+    <li><a href="PostAlmacen.html">Agregar</a></li>
+    <li><a href="GetNameAlmacen.html">Buscar</a></li>
+    <li><a href="PutAlmacen.html">Editar</a></li>
+    
+  </ul>
+
+     <!-- Artistas-->
+  <ul id='Artistas' class='dropdown-content'>
+    <li><a href="GetAllArtista.html">Ver todos</a></li>
+    <li><a href="PostArtista.html">Agregar</a></li>
+    <li><a href="GetNameArtista.html">Buscar</a></li>
+    <li><a href="PutArtista.html">Editar</a></li>
+    
+  </ul>
+
+   <!-- Prestamos-->
+  <ul id='Prestamos' class='dropdown-content'>
+    <li><a href="GetAllPrestamos.html">Ver todos</a></li>
+    <li><a href="PostPrestamo.html">Agregar</a></li>
+    <li><a href="GetNamePrestamo.html">Buscar</a></li>
+    <li><a href="PutPrestamo.html">Editar</a></li>
+    
+  </ul>
+
+    <h1 class="TITULO">Agregar Vestuario</h1>
+
+    <div class="row ">
+        <div class="input-field col s6">
+            <input placeholder="Nombre" id="Nombre" type="text" class="validate">
+            <label for="last_name">Nombre</label>
+        </div>
+        <div class="input-field col s6">
+            <input placeholder="Talla" id="Talla" type="text" class="validate">
+            <label for="Tel">Talla</label>
+        </div>
+
+        <div class="input-field col s6">
+            <select id="id_almacen">
+                <option value="" disabled selected>ID Almacen</option>
+            </select>
+            <label>ID Almacen</label>
+        </div>
+
+
+        <!-- <div class="input-field col s6">
+            <input placeholder="id_almacen" id="id_almacen" type="text" class="validate">
+            <label for="email">id_almacen</label>
+          </div> -->
+
+
+
+        <div class="input-field col s6">
+            <input placeholder="tags" id="tags" type="text" class="validate">
+            <label for="Address">tags</label>
+        </div>
+        <div class="col s6 ">
+            <a class="btn-floating btn-large waves-effect waves-light red" onclick="AddVestuario()"><i
+                    class="material-icons">add</i></a>
+
+        </div>
+    </div>
+
+
+
+
+
+
+</body>
+
+</html>

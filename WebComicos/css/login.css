@@ -1,0 +1,18 @@
+.LogIN{
+
+    width: 40%;
+    height: 40%;
+    margin-left: 25%;
+    margin-top: 10%;
+    
+    background-color: white;
+}
+
+.TITULO{
+    font-family: 'Castoro', serif;
+    text-align: center;
+}
+
+body{
+    background-color:#e1fafa;
+}
