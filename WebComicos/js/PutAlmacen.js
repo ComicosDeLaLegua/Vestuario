@@ -6,7 +6,7 @@ var queryString = location.search.substring(1);
 
 
 var headers = {};
-var url = "http://127.0.0.1:4000/user"
+var url = "https://comicos-vestuario.herokuapp.com/user"
 
 function init(){
 
