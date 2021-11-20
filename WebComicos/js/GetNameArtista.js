@@ -74,5 +74,5 @@ function DisplayArtistaNombre(emp){
 function CloseSesion(){
 
     localStorage.removeItem('Token');
-    window.location.href = "login.html"
+    window.location.href = "Login.html"
 }
